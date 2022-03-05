@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-generator",
+  "version": "1.0.0",
+  "description": "A node app which uses user input to create a portfolio webpage.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaxonAdams/portfolio-generator.git"
+  },
+  "author": "Jaxon Adams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaxonAdams/portfolio-generator/issues"
+  },
+  "homepage": "https://github.com/JaxonAdams/portfolio-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}

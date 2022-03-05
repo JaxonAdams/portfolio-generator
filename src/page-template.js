@@ -1,4 +1,9 @@
-const generatePage = (name, github) => {
+module.exports = templateData => {
+    console.log(templateData);
+
+    // Destructure projects and about data from templateData based on their property key names
+    const { projects, about, ...header } = templateData;
+
     return `
 <!DOCTYPE html>
 <html lang="en">
@@ -11,8 +16,9 @@ const generatePage = (name, github) => {
     <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300, 500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
+    
 <body>
+<<<<<<< HEAD
     <header>
         <div class="container flex-row justify-space-between align-center py-3">
             <h1 class="page-title text-secondary bg-dark py-2 px-3">${header.name}</h1>
@@ -30,9 +36,11 @@ const generatePage = (name, github) => {
     <footer class="container text-center py-3">
         <h3 class="text-dark">&copy; ${new Date().getFullYear()} by ${header.name}</h3>
     </footer>
+=======
+    <h1>${templateData.name}</h1>
+    <h2><a href="https://github.com/${templateData.github}" target="_Blank">GitHub</a></h2>
+>>>>>>> develop
 </body>
 </html>
-    `;
-}
-
-module.exports = generatePage;
+        `;
+};
